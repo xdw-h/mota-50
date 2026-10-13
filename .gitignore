@@ -1,0 +1,15 @@
+*.zip
+*.exe
+*.png
+!game/51/**/*.png
+analysis-sources/
+rea-analysis.json
+original/
+game/51/_saves/
+game/51/_server/
+game/51/_docs/
+game/51/常用工具/
+game/51/*.url
+node_modules/
+.DS_Store
+Thumbs.db
