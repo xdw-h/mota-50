@@ -7,6 +7,38 @@
     overflow: hidden;
 }
 
+#gameShell {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+#gameShell.pageFullscreen {
+    position: fixed;
+    inset: 0;
+    z-index: 2147483647;
+}
+
+/* 浏览器注入的 Gmail 推广浮层会遮挡游戏触摸区域。 */
+#gmail-app-floating {
+    display: none !important;
+}
+
+#fullscreenBtn {
+    position: fixed;
+    top: max(8px, env(safe-area-inset-top));
+    right: max(8px, env(safe-area-inset-right));
+    z-index: 1000;
+    min-height: 36px;
+    padding: 6px 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, .75);
+    color: #fff;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
 #gameGroup {
     position: absolute;
     box-sizing: border-box;

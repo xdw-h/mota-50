@@ -16,6 +16,8 @@
     <link type='text/css' href='styles.css' rel='stylesheet'>
 </head>
 <body>
+<div id="gameShell">
+<button id="fullscreenBtn" type="button" aria-label="进入全屏">全屏</button>
 <div id='startImageBackgroundDiv'>
     <div id='startImageDiv'></div>
     <img id='startImageLogo' />
@@ -54,7 +56,7 @@
                 <div id='startTopProgress'></div>
             </div>
             <p id='startTopLoadTips'>资源即将开始加载</p>
-            <p id='startTopHint'>HTML5魔塔游戏平台，享受更多魔塔游戏：<br/>https://h5mota.com/</p>
+            <p id='startTopHint'>经典50层魔塔 · 资源加载后即可开始</p>
         </div>
         <img id='startBackground'>
         <p id='startLogo'></p>
@@ -189,6 +191,8 @@
     </div>
 </div>
 <!-- injection -->
+ </div>
+<script src='fullscreen.js'></script>
 <script src='libs/thirdparty/lz-string.min.js'></script>
 <script src='libs/thirdparty/priority-queue.min.js'></script>
 <script src='libs/thirdparty/localforage.min.js'></script>
